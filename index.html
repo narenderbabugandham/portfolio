@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>My Portfolio</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="business-landing-page.jpg" alt="banner" width="100%" height="100%">
+        <h1>Hello, I'm Narender</h1>
+        <p>Web Developer | Designer | Programmer</p>
+        <button onclick="scrollToSection('projects')">View My Work</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A passionate developer with experience in HTML, CSS, JavaScript, and building responsive websites.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>The Counter Project is a simple yet functional web application designed to demonstrate basic JavaScript interactivity. This project allows users to increment, decrement, and reset a counter, providing an intuitive way to track counts. With a clean interface and responsive design, the counter is easy to use on both desktop and mobile devices. This project showcases fundamental HTML, CSS, and JavaScript skills, such as DOM manipulation, event handling, and styling. Ideal for beginners and perfect as a feature on a personal portfolio, it highlights essential web development techniques and interactivity principles.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>The Ovin Clinic Project is a tailored website developed to provide a clean, professional online presence for the Ovin Clinic. This HTML-based project focuses on presenting the clinic's services, location, and contact information in a user-friendly and accessible manner. Designed with responsive HTML and CSS, the layout adapts seamlessly across devices, ensuring a positive user experience on both desktop and mobile platforms. This project highlights essential web development skills in structuring content, creating a modern design, and implementing responsive elements, making it an ideal showcase of practical HTML and CSS capabilities for real-world applications.</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
